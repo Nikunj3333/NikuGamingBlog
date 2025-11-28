@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Brawl Stars Best Brawlers for Beginners (2025 Updated Guide)</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Google Fonts for a modern, gaming vibe -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+<style>
+  /* Apply the font family globally */
+  body {
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Animated background with gradient and moving shapes for a game site vibe */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(270deg, #ff0055, #00ffaa, #5500ff, #ffff55);
+    background-size: 600% 600%;
+    animation: gradientAnimation 20s ease infinite;
+    z-index: -1;
+  }
+
+  /* Animated shapes overlay for dynamic movement */
+  .animated-shapes {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.2;
+    background: rgba(255,255,255,0.1);
+    animation: moveShapes 30s linear infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  @keyframes moveShapes {
+    from { transform: translate(0, 0) scale(1);}
+    to { transform: translate(100px, -100px) scale(1.2);}
+  }
+
+  /* Fade-in animation similar to previous pages */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-500 { animation-delay: 0.5s; }
+</style>
+</head>
+<body class="bg-gray-950 text-white relative">
+
+<!-- Generate animated shapes -->
+<div class="animated-shapes" id="shapesContainer"></div>
+
+<!-- Main Section without background image -->
+<section class="max-w-6xl mx-auto p-4 bg-gray-950 bg-opacity-60">
+  <!-- Back Button placed at the top center, below the title -->
+  <div class="flex justify-center mb-4">
+    <button class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded shadow-lg focus:outline-none">
+      <a href="#" onclick="history.back()">Back</a>
+    </button>
+  </div>
+
+  <!-- Page Title -->
+  <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center fade-in">Brawl Stars Best Brawlers for Beginners (2025 Updated Guide)</h2>
+  
+  <!-- Introduction -->
+  <div class="max-w-3xl mx-auto bg-white bg-opacity-20 p-6 rounded-lg shadow-xl border-4 border-cyan-300 border-opacity-50 fade-in delay-200">
+    <h3 class="text-3xl font-semibold mb-4 text-center">Introduction</h3>
+    <p class="text-lg text-white text-center">If you’re new to Brawl Stars, choosing the right brawler can help you win more games and climb trophies faster. In this 2025 updated guide, we list the best beginner-friendly brawlers, their strengths, and how to use them in battles.</p>
+  </div>
+
+  <!-- Brawlers Grid -->
+  <div class="grid gap-6 md:grid-cols-2 mt-8 max-w-5xl mx-auto">
+    <!-- Brawler 1 -->
+    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-lg shadow-xl hover:scale-105 transform transition duration-300 border-4 border-cyan-300 border-opacity-50 mx-auto max-w-lg">
+      <h3 class="text-2xl md:text-3xl font-semibold mb-4 text-center">1. Shelly – The Ultimate Starter Brawler</h3>
+      <p class="mb-4 text-center">Shelly is perfect for all beginners because she works well at close range and can deal heavy burst damage.</p>
+      <h4 class="font-semibold mb-2 mt-4">Why Shelly is good:</h4>
+      <ul class="list-disc list-inside mb-4 mx-auto max-w-md text-white">
+        <li>Easy to learn</li>
+        <li>Strong Super attack</li>
+        <li>Great in close-range maps</li>
+      </ul>
+      <h4 class="font-semibold mb-2">Best Modes:</h4>
+      <ul class="list-disc list-inside mb-4 mx-auto max-w-md text-white">
+        <li>Showdown</li>
+        <li>Gem Grab</li>
+        <li>Bounty</li>
+      </ul>
+      <h4 class="font-semibold mb-2">Tips to use Shelly:</h4>
+      <ul class="list-disc list-inside mx-auto max-w-md text-white">
+        <li>Hide in bushes for surprise attacks</li>
+        <li>Use her Super to break walls and finish enemies</li>
+      </ul>
+    </div>
+    <!-- Brawler 2 -->
+    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-lg shadow-xl hover:scale-105 transform transition duration-300 border-4 border-cyan-300 border-opacity-50 mx-auto max-w-lg">
+      <h3 class="text-2xl md:text-3xl mb-4 text-center">2. Colt – Long-Range Damage Expert</h3>
+      <p class="mb-4 text-center">Colt deals heavy damage from a distance but requires good aim.</p>
+      <h4 class="font-semibold mb-2 mt-4">Why Colt is good:</h4>
+      <ul class="list-disc list-inside mb-4 mx-auto max-w-md text-white">
+        <li>High damage</li>
+        <li>Long range</li>
+        <li>Useful in open maps</li>
+      </ul>
+      <h4 class="font-semibold mb-2">Tips:</h4>
+      <ul class="list-disc list-inside mx-auto max-w-md text-white">
+        <li>Stay far from enemies</li>
+        <li>Practice aiming with moving targets</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Footer without background image -->
+<footer class="bg-gray-800 p-4 text-center mt-8 bg-opacity-60">
+  <p class="text-white">&copy; 2025 Gaming Niku Plays Blog. All rights reserved.</p>
+  <!-- YouTube Link -->
+  <a href="https://www.youtube.com/@NikuPlays_Gamer" target="_blank" rel="noopener noreferrer" class="block mt-2 text-white hover:underline">Watch My YouTube Channel</a>
+</footer>
+
+<!-- Generate animated shapes for background -->
+<script>
+  // Generate animated shapes
+  const shapesContainer = document.getElementById('shapesContainer');
+  for (let i=0; i<20; i++) {
+    const shape = document.createElement('div');
+    shape.className = 'shape';
+    shape.style.width = shape.style.height = (Math.random() * 50 + 20) + 'px';
+    shape.style.top = Math.random() * 100 + '%';
+    shape.style.left = Math.random() * 100 + '%';
+    shape.style.backgroundColor = `rgba(255,255,255,${Math.random() * 0.2 + 0.1})`;
+    shape.style.transform = `translate(0,0)`;
+    shape.style.animationDuration = (20 + Math.random() * 20) + 's';
+    shape.style.borderRadius = Math.random() > 0.5 ? '50%' : '20%';
+    shapesContainer.appendChild(shape);
+  }
+</script>
+</body>
+</html>

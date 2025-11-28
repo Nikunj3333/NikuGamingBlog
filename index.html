@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gaming NikuPlays Blog</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Google Fonts for a bold, modern gaming vibe -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+<style>
+ 
+  body {
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Custom animated background */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(270deg, #ff0055, #00ffaa, #5500ff, #ffff55);
+    background-size: 600% 600%;
+    animation: gradientAnimation 20s ease infinite;
+    z-index: -1;
+  }
+
+  /* Additional animated shapes overlay for more dynamic effect */
+  .animated-shapes {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.2;
+    background: rgba(255,255,255,0.1);
+    animation: moveShapes 30s linear infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  @keyframes moveShapes {
+    from { transform: translate(0, 0) scale(1);}
+    to { transform: translate(100px, -100px) scale(1.2);}
+  }
+
+  /* Create multiple shapes dynamically in JS */
+
+  /* Fade-in animation remains the same */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-500 { animation-delay: 0.5s; }
+</style>
+</head>
+<body class="bg-gray-950 text-white relative">
+
+<!-- Dynamic animated shapes -->
+<div class="animated-shapes" id="shapesContainer"></div>
+
+<!-- HEADER -->
+<header class="flex flex-wrap justify-between items-center p-5 bg-gray-800 bg-opacity-60 relative z-10">
+  <h1 class="text-4xl md:text-5xl font-semibold mb-0 p-4 rounded-lg font-orbitron">Gaming NikuPlays Blog</h1>
+  <!-- Navigation (dynamically generated) -->
+  <div id="menu" class="hidden md:flex space-x-4 mt-2 md:mt-0 font-semibold text-xl"></div>
+  <!-- Hamburger menu for mobile -->
+  <div class="md:hidden">
+    <button id="menu-toggle" class="focus:outline-none">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<section class="max-w-6xl mx-auto p-6 space-y-8 relative z-10">
+  <!-- Main Title -->
+  <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center fade-in">Clash Royale Best Decks for Arena 5–10 (2025 Beginner Guide)</h2>
+  <!-- Introduction -->
+  <div class="bg-white bg-opacity-20 p-6 rounded-lg shadow-lg fade-in delay-200">
+    <p class="text-lg text-white text-center">Climbing through Arena 5 to 10 can be difficult, especially for beginners. In this guide, we share the best decks that are strong, easy to use, and perfect for winning battles in 2025.</p>
+  </div>
+
+  <!-- Decks Grid -->
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Deck 1 -->
+    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-lg shadow-xl hover:scale-105 transform transition duration-300 border-4 border-cyan-300 border-opacity-50">
+      <h3 class="text-2xl md:text-3xl font-semibold mb-4">1. Giant + Witch Push Deck</h3>
+      <h4 class="font-semibold mb-2">Cards:</h4>
+      <ul class="list-disc list-inside mb-4">
+        <li>Giant, Witch, Musketeer, Mini P.E.K.K.A, Arrows, Bomber, Fireball, Skeletons</li>
+      </ul>
+      <h4 class="font-semibold mb-2">Why this deck is great:</h4>
+      <ul class="list-disc list-inside mb-4">
+        <li>Very strong push</li>
+        <li>Good defense</li>
+        <li>Easy to use</li>
+      </ul>
+      <h4 class="font-semibold mb-2">How to play it:</h4>
+      <ul class="list-disc list-inside">
+        <li>Start with the Giant at the back</li>
+        <li>Put Witch or Musketeer behind</li>
+        <li>Save Fireball for enemy hordes</li>
+      </ul>
+    </div>
+    <!-- Deck 2 -->
+    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-lg shadow-xl hover:scale-105 transform transition duration-300 border-4 border-cyan-300 border-opacity-50">
+      <h3 class="text-2xl md:text-3xl font-semibold mb-4">2. Hog Rider Cycle Deck</h3>
+      <h4 class="font-semibold mb-2">Cards:</h4>
+      <ul class="list-disc list-inside mb-4">
+        <li>Hog Rider, Ice Spirit, Cannon, Fireball, Skeletons, Log, Valkyrie, Bats</li>
+      </ul>
+      <h4 class="font-semibold mb-2">Strengths:</h4>
+      <ul class="list-disc list-inside mb-4">
+        <li>Fast cycle</li>
+        <li>Hard to defend</li>
+        <li>Very fun to play</li>
+      </ul>
+      <h4 class="font-semibold mb-2">How to play:</h4>
+      <ul class="list-disc list-inside">
+        <li>Send Hog + Ice Spirit</li>
+        <li>Defend with Cannon</li>
+        <li>Use Log for swarms</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Conclusion -->
+  <div class="mt-8 bg-white bg-opacity-20 p-6 rounded-lg shadow-xl border-4 border-cyan-300">
+    <h3 class="text-3xl md:text-4xl font-bold mb-4 text-center">Conclusion</h3>
+    <p class="text-lg text-white text-center">These decks are simple, strong, and perfect for beginners climbing from Arena 5 to 10. Try all of them and choose the one that matches your playstyle.</p>
+    <p class="mt-4 text-center font-semibold">Posted 23 hours ago by NikuGamingBlogs</p>
+  </div>
+
+  <!-- Brawl Stars Guide -->
+  <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center fade-in">Brawl Stars Best Brawlers for Beginners (2025 Updated Guide)</h2>
+  <!-- Brawl Stars Intro -->
+  <div class="bg-white bg-opacity-20 p-6 rounded-lg shadow-xl space-y-4 fade-in delay-300 border-4 border-cyan-300">
+    <h3 class="text-3xl font-semibold mb-2">Introduction</h3>
+    <p> If you’re new to Brawl Stars, choosing the right brawler can help you win more games and climb trophies faster. In this 2025 updated guide, we list the best beginner-friendly brawlers, their strengths, and how to use them in battles.</p>
+  </div>
+
+  <!-- Brawlers List -->
+  <div class="grid md:grid-cols-2 gap-8 mt-4">
+    <!-- Brawler 1 -->
+    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-lg shadow-xl hover:scale-105 transform transition duration-300 border-4 border-cyan-300">
+      <h3 class="text-2xl md:text-3xl mb-4">1. Shelly – The Ultimate Starter Brawler</h3>
+      <p>Shelly is perfect for all beginners because she works well at close range and can deal heavy burst damage.</p>
+      <h4 class="font-semibold mb-2 mt-4">Why Shelly is good:</h4>
+      <ul class="list-disc list-inside mb-4">
+        <li>Easy to learn</li>
+        <li>Strong Super attack</li>
+        <li>Great in close-range maps</li>
+      </ul>
+      <h4 class="font-semibold mb-2">Best Modes:</h4>
+      <ul class="list-disc list-inside mb-4">
+        <li>Showdown</li>
+        <li>Gem Grab</li>
+        <li>Bounty</li>
+      </ul>
+      <h4 class="font-semibold mb-2">Tips to use Shelly:</h4>
+      <ul class="list-disc list-inside">
+        <li>Hide in bushes for surprise attacks</li>
+        <li>Use her Super to break walls and finish enemies</li>
+      </ul>
+    </div>
+    <!-- Brawler 2 -->
+    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-lg shadow-xl hover:scale-105 transform transition duration-300 border-4 border-cyan-300">
+      <h3 class="text-2xl md:text-3xl mb-4">2. Colt – Long-Range Damage Expert</h3>
+      <p>Colt deals heavy damage from a distance but requires good aim.</p>
+      <h4 class="font-semibold mb-2 mt-4">Why Colt is good:</h4>
+      <ul class="list-disc list-inside mb-4">
+        <li>High damage</li>
+        <li>Long range</li>
+        <li>Useful in open maps</li>
+      </ul>
+      <h4 class="font-semibold mb-2">Tips:</h4>
+      <ul class="list-disc list-inside">
+        <li>Stay far from enemies</li>
+        <li>Practice aiming with moving targets</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-800 p-4 text-center mt-8">
+  <p class="text-white">&copy; 2025 Gaming Niku Plays Blog. All rights reserved.</p>
+  <a href="https://www.youtube.com/@NikuPlays_Gamer" target="_blank" rel="noopener noreferrer" class="block mt-2 text-white hover:underline">Watch My YouTube Channel</a>
+</footer>
+
+<!-- Scripts for menu and background shapes -->
+<script>
+  // Toggle menu
+  document.getElementById('menu-toggle').addEventListener('click', () => {
+    document.getElementById('menu').classList.toggle('hidden');
+  });
+
+  // Generate nav menu links
+  const menuItems = [
+    { name: 'Brawl Stars', href: 'brawlstars.html' },
+    { name: 'Clash Royale', href: 'clashroyale.html' },
+  ];
+  const menuContainer = document.getElementById('menu');
+  menuItems.forEach(item => {
+    const a = document.createElement('a');
+    a.href = item.href;
+    a.className = 'ml-4 mt-2 cursor-pointer hover:underline hover:text-cyan-300 transition duration-300 bg-white bg-opacity-20 p-3 rounded';
+    a.textContent = item.name;
+    menuContainer.appendChild(a);
+  });
+
+  // Generate animated background shapes
+  const shapesContainer = document.getElementById('shapesContainer');
+  for (let i=0; i<20; i++) {
+    const shape = document.createElement('div');
+    shape.className = 'shape';
+    shape.style.width = shape.style.height = (Math.random() * 50 + 20) + 'px';
+    shape.style.top = Math.random() * 100 + '%';
+    shape.style.left = Math.random() * 100 + '%';
+    shape.style.backgroundColor = `rgba(255,255,255,${Math.random() * 0.2 + 0.1})`;
+    shape.style.transform = `translate(0,0)`;
+    shape.style.animationDuration = (20 + Math.random() * 20) + 's';
+    shape.style.borderRadius = Math.random() > 0.5 ? '50%' : '20%';
+    shapesContainer.appendChild(shape);
+  }
+</script>
+</body>
+</html>
