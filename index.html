@@ -1,254 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Adsence  -->
-<meta name="google-adsense-account" content="ca-pub-9035612598345255">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Gaming NikuPlays Blog</title>
-<!-- Tailwind CSS CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Google Fonts for a bold, modern gaming vibe -->
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
-<style>
- 
-  body {
-    font-family: 'Orbitron', sans-serif;
-    position: relative;
-    overflow-x: hidden;
-  }
-
-  /* Custom animated background */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(270deg, #ff0055, #00ffaa, #5500ff, #ffff55);
-    background-size: 600% 600%;
-    animation: gradientAnimation 20s ease infinite;
-    z-index: -1;
-  }
-
-  /* Additional animated shapes overlay for more dynamic effect */
-  .animated-shapes {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    pointer-events: none;
-    z-index: -1;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .shape {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.2;
-    background: rgba(255,255,255,0.1);
-    animation: moveShapes 30s linear infinite;
-  }
-
-  @keyframes gradientAnimation {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-  }
-
-  @keyframes moveShapes {
-    from { transform: translate(0, 0) scale(1);}
-    to { transform: translate(100px, -100px) scale(1.2);}
-  }
-
-  /* Create multiple shapes dynamically in JS */
-
-  /* Fade-in animation remains the same */
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .fade-in {
-    opacity: 0;
-    animation: fadeInUp 1s ease-out forwards;
-  }
-  .delay-200 { animation-delay: 0.2s; }
-  .delay-300 { animation-delay: 0.3s; }
-  .delay-500 { animation-delay: 0.5s; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Best Brawlers for Beginners - Niku Plays Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      position: relative;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: 
+        url('image/img2.jpg'), /* Replace with your background image URL */
+        linear-gradient(270deg, #ff0055, #00ffaa, #5500ff, #ffff55);
+      background-size: cover, 600% 600%;
+      background-position: center, 0% 50%;
+      background-repeat: no-repeat, no-repeat;
+      background-blend-mode: overlay;
+      animation: gradientAnimation 20s ease-in-out infinite;
+      z-index: -1;
+    }
+    @keyframes gradientAnimation {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    /* Shapes styles for animation */
+    .shape {
+      position: absolute;
+      opacity: 0.2;
+      animation: floatUpDown 25s ease-in-out infinite;
+    }
+    @keyframes floatUpDown {
+      0%, 100% {transform: translateY(0);}
+      50% {transform: translateY(-30px);}
+    }
+  </style>
 </head>
 <body class="bg-gray-950 text-white relative">
-<!-- Adsence Script -->
-    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-<!-- Dynamic animated shapes -->
+
+<!-- Shapes Animation -->
 <div class="animated-shapes" id="shapesContainer"></div>
 
-<!-- HEADER -->
-<header class="flex flex-wrap justify-between items-center p-5 bg-gray-800 bg-opacity-60 relative z-10">
-  <h1 class="text-4xl md:text-5xl font-semibold mb-0 p-4 rounded-lg font-orbitron">Gaming NikuPlays Blog</h1>
-  <!-- Navigation (dynamically generated) -->
-  <div id="menu" class="hidden md:flex space-x-4 mt-2 md:mt-0 font-semibold text-xl"></div>
-  <!-- Hamburger menu for mobile -->
-  <div class="md:hidden">
-    <button id="menu-toggle" class="focus:outline-none">
-      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
-  </div>  
+<!-- Main Content -->
+<section class="max-w-6xl mx-auto p-4 bg-gray-950 bg-opacity-70 flex flex-col items-center">
 
-</header>
-
-<!-- MAIN CONTENT -->
-<section class="max-w-6xl mx-auto p-6 space-y-8 relative z-10">
-  <!-- Main Title -->
-  <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center fade-in">Clash Royale Best Decks for Arena 5–10 (2025 Beginner Guide)</h2>
-  <!-- Introduction -->
-  <div class="bg-white bg-opacity-20 p-6 rounded-lg shadow-lg fade-in delay-200">
-    <p class="text-lg text-white text-center">Climbing through Arena 5 to 10 can be difficult, especially for beginners. In this guide, we share the best decks that are strong, easy to use, and perfect for winning battles in 2025.</p>
+  <!-- Navigation Buttons -->
+  <div class="flex flex-wrap justify-center mb-6 gap-3 text-lg font-semibold">
+    <a href="about.html" class="bg-cyan-600 hover:bg-cyan-700 text-white py-2 px-4 rounded-full shadow-lg transition transform hover:scale-105">About Us</a>
+    <a href="terms.html" class="bg-cyan-600 hover:bg-cyan-700 text-white py-2 px-4 rounded-full shadow-lg transition transform hover:scale-105">Terms & Conditions</a>
+    <a href="privacy.html" class="bg-cyan-600 hover:bg-cyan-700 text-white py-2 px-4 rounded-full shadow-lg transition transform hover:scale-105">Privacy Policy</a>
+    <a href="contact.html" class="bg-cyan-600 hover:bg-cyan-700 text-white py-2 px-4 rounded-full shadow-lg transition transform hover:scale-105">Contact Us</a>
+    <a href="sitemap.html" class="bg-cyan-600 hover:bg-cyan-700 text-white py-2 px-4 rounded-full shadow-lg transition transform hover:scale-105">Sitemap</a>
   </div>
 
-  <!-- Decks Grid -->
-  <div class="grid md:grid-cols-2 gap-8">
-    <!-- Deck 1 -->
-    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-lg shadow-xl hover:scale-105 transform transition duration-300 border-4 border-cyan-300 border-opacity-50">
-      <h3 class="text-2xl md:text-3xl font-semibold mb-4">1. Giant + Witch Push Deck</h3>
-      <h4 class="font-semibold mb-2">Cards:</h4>
-      <ul class="list-disc list-inside mb-4">
-        <li>Giant, Witch, Musketeer, Mini P.E.K.K.A, Arrows, Bomber, Fireball, Skeletons</li>
-      </ul>
-      <h4 class="font-semibold mb-2">Why this deck is great:</h4>
-      <ul class="list-disc list-inside mb-4">
-        <li>Very strong push</li>
-        <li>Good defense</li>
-        <li>Easy to use</li>
-      </ul>
-      <h4 class="font-semibold mb-2">How to play it:</h4>
-      <ul class="list-disc list-inside">
-        <li>Start with the Giant at the back</li>
-        <li>Put Witch or Musketeer behind</li>
-        <li>Save Fireball for enemy hordes</li>
-      </ul>
+  <!-- New Section: Game Mode & Map Information -->
+<div clas="max-w-6xl mx-auto p-4 mb-12 bg-gray-900 bg-opacity-70 rounded-3xl shadow-xl border-4 border-cyan-400 border-opacity-50 backdrop-blur-md">
+  <h2 class="text-4xl font-semibold mb-6 text-center text-cyan-300">Game Modes & Maps in Brawl Stars</h2>
+  
+  <div class="grid md:grid-cols-2 gap-4 text-gray-200 text-lg leading-relaxed">
+    <!-- Showdown -->
+    <div>
+      <h3 class="text-2xl font-bold mb-2 text-yellow-400">Showdown</h3>
+      <p>Battle Royale mode where 10 players fight in a shrinking map until one remains. Perfect for solo or duo play, testing survival skills and strategic positioning.</p>
     </div>
-    <!-- Deck 2 -->
-    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-lg shadow-xl hover:scale-105 transform transition duration-300 border-4 border-cyan-300 border-opacity-50">
-      <h3 class="text-2xl md:text-3xl font-semibold mb-4">2. Hog Rider Cycle Deck</h3>
-      <h4 class="font-semibold mb-2">Cards:</h4>
-      <ul class="list-disc list-inside mb-4">
-        <li>Hog Rider, Ice Spirit, Cannon, Fireball, Skeletons, Log, Valkyrie, Bats</li>
-      </ul>
-      <h4 class="font-semibold mb-2">Strengths:</h4>
-      <ul class="list-disc list-inside mb-4">
-        <li>Fast cycle</li>
-        <li>Hard to defend</li>
-        <li>Very fun to play</li>
-      </ul>
-      <h4 class="font-semibold mb-2">How to play:</h4>
-      <ul class="list-disc list-inside">
-        <li>Send Hog + Ice Spirit</li>
-        <li>Defend with Cannon</li>
-        <li>Use Log for swarms</li>
-      </ul>
+    <!-- Duo Showdown -->
+    <div>
+      <h3 class="text-2xl font-bold mb-2 text-yellow-400">Duo Showdown</h3>
+      <p>Similar to Showdown but played in teams of two. Coordinate with your partner to outlast all other duos on the map.</p>
+    </div>
+    <!-- Gem Grab -->
+    <div>
+      <h3 class="text-2xl font-bold mb-2 text-yellow-400">Gem Grab</h3>
+      <p>Teams compete to collect and hold 10 gems in the center. The first team to hold 10 gems for 15 seconds wins. Focus on teamwork and map control.</p>
+    </div>
+    <!-- Bounty -->
+    <div>
+      <h3 class="text-2xl font-bold mb-2 text-yellow-400">Bounty</h3>
+      <p>Players earn stars by downing opponents. The team with the most stars when the timer ends wins. A game of risk and reward, with aggressive play encouraged.</p>
+    </div>
+    <!-- Heist -->
+    <div>
+      <h3 class="text-2xl font-bold mb-2 text-yellow-400">Heist</h3>
+      <p>Teams attempt to crack the opponent's safe while defending their own. Use firepower and tactics to secure victory.</p>
+    </div>
+    <!-- Boss Fight -->
+    <div>
+      <h3 class="text-2xl font-bold mb-2 text-yellow-400">Boss Fight</h3>
+      <p>Players team up to defeat a powerful boss. Cooperation and strategy are key as the boss unleashes devastating attacks.</p>
+    </div>
+    <!-- Knowout Map Info -->
+    <div>
+      <h3 class="text-2xl font-bold mb-2 text-yellow-400">Knowout Maps</h3>
+      <p>Various maps with unique layouts and hazards. Understanding map features helps in positioning and tactics for each game mode.</p>
     </div>
   </div>
+</div>
+  <!-- Page Title -->
+  <h1 class="text-4xl md:text-5xl font-extrabold mb-8 text-center tracking-wider drop-shadow-lg">Best Brawlers for Beginners</h1>
 
-  <!-- Conclusion -->
-  <div class="mt-8 bg-white bg-opacity-20 p-6 rounded-lg shadow-xl border-4 border-cyan-300">
-    <h3 class="text-3xl md:text-4xl font-bold mb-4 text-center">Conclusion</h3>
-    <p class="text-lg text-white text-center">These decks are simple, strong, and perfect for beginners climbing from Arena 5 to 10. Try all of them and choose the one that matches your playstyle.</p>
-    <p class="mt-4 text-center font-semibold">Posted 23 hours ago by NikuGamingBlogs</p>
+  <!-- Content Box -->
+  <div class="w-full max-w-4xl p-8 bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900 bg-opacity-80 rounded-3xl shadow-xl border-4 border-cyan-400 border-opacity-50 backdrop-blur-md hover:scale-105 transform transition-all duration-300 mb-12">
+    <h2 class="text-3xl font-bold mb-4 text-cyan-200 text-center">Introduction</h2>
+    <p class="mb-4 text-gray-200 text-lg leading-relaxed">Welcome to Niku Plays Blog! Here we list the best Brawlers for beginners in Brawl Stars, helping new players get started with the right characters. Below, you'll find detailed descriptions of key Brawlers as well as information on all Brawlers.</p>
   </div>
 
-  <!-- Brawl Stars Guide -->
-  <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center fade-in">Brawl Stars Best Brawlers for Beginners (2025 Updated Guide)</h2>
-  <!-- Brawl Stars Intro -->
-  <div class="bg-white bg-opacity-20 p-6 rounded-lg shadow-xl space-y-4 fade-in delay-300 border-4 border-cyan-300">
-    <h3 class="text-3xl font-semibold mb-2">Introduction</h3>
-    <p> If you’re new to Brawl Stars, choosing the right brawler can help you win more games and climb trophies faster. In this 2025 updated guide, we list the best beginner-friendly brawlers, their strengths, and how to use them in battles.</p>
+  <!-- Brawler Details -->
+  <div class="w-full max-w-5xl px-4 space-y-8 mb-12">
+    <h2 class="text-4xl font-semibold text-center text-cyan-300 mb-6">Featured Brawlers - Details</h2>
+    
+   <!-- Brawler: Dynamike -->
+<div class="bg-gray-900 bg-opacity-70 p-4 rounded-xl shadow-lg hover:scale-105 transition duration-300 flex items-center space-x-4">
+  <img src="image/Dynamike.png" alt="Dynamike" class="w-24 h-24 rounded-lg object-cover border-2 border-white" />
+  <div>
+    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Dynamike</h3>
+    <p class="mb-2">A explosive thrower who uses dynamite to blow up enemies. Great for controlling areas and dealing splash damage. His super throws a giant stick of dynamite that deals massive area damage.</p>
+    <ul class="list-disc list-inside mb-2">
+      <li>Type: Thrower</li>
+      <li>Best for: Area control, Splash damage</li>
+      <li>Super: Giant dynamite for big area damage</li>
+    </ul>
+    <p class="text-gray-300">Ideal for beginners who enjoy strategic positioning and explosive plays.</p>
   </div>
+</div>
+<!-- Brock -->
+<div class="bg-gray-900 bg-opacity-70 p-4 rounded-xl shadow-lg hover:scale-105 transition duration-300 flex items-center space-x-4 mb-6">
+  <img src="image/brock.jpg" alt="Brock" class="w-24 h-24 rounded-lg object-cover border-2 border-white" />
+  <div>
+    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Brock</h3>
+    <p class="mb-2">A long-range missile launcher with explosive projectiles. His super launches a rocket that deals high damage and knocks back enemies. Perfect for sniping and area denial.</p>
+    <ul class="list-disc list-inside mb-2">
+      <li>Type: Ranged</li>
+      <li>Best for: Sniping, Area control</li>
+      <li>Super: Rocket that deals high damage</li>
+    </ul>
+    <p class="text-gray-300">Great for beginners who prefer ranged combat and tactical positioning.</p>
+  </div>
+</div>
 
-  <!-- Brawlers List -->
-  <div class="grid md:grid-cols-2 gap-8 mt-4">
-    <!-- Brawler 1 -->
-    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-lg shadow-xl hover:scale-105 transform transition duration-300 border-4 border-cyan-300">
-      <h3 class="text-2xl md:text-3xl mb-4">1. Shelly – The Ultimate Starter Brawler</h3>
-      <p>Shelly is perfect for all beginners because she works well at close range and can deal heavy burst damage.</p>
-      <h4 class="font-semibold mb-2 mt-4">Why Shelly is good:</h4>
-      <ul class="list-disc list-inside mb-4">
-        <li>Easy to learn</li>
-        <li>Strong Super attack</li>
-        <li>Great in close-range maps</li>
-      </ul>
-      <h4 class="font-semibold mb-2">Best Modes:</h4>
-      <ul class="list-disc list-inside mb-4">
-        <li>Showdown</li>
-        <li>Gem Grab</li>
-        <li>Bounty</li>
-      </ul>
-      <h4 class="font-semibold mb-2">Tips to use Shelly:</h4>
-      <ul class="list-disc list-inside">
-        <li>Hide in bushes for surprise attacks</li>
-        <li>Use her Super to break walls and finish enemies</li>
-      </ul>
-    </div>
-    <!-- Brawler 2 -->
-    <div class="bg-gray-900 bg-opacity-50 p-6 rounded-lg shadow-xl hover:scale-105 transform transition duration-300 border-4 border-cyan-300">
-      <h3 class="text-2xl md:text-3xl mb-4">2. Colt – Long-Range Damage Expert</h3>
-      <p>Colt deals heavy damage from a distance but requires good aim.</p>
-      <h4 class="font-semibold mb-2 mt-4">Why Colt is good:</h4>
-      <ul class="list-disc list-inside mb-4">
-        <li>High damage</li>
-        <li>Long range</li>
-        <li>Useful in open maps</li>
-      </ul>
-      <h4 class="font-semibold mb-2">Tips:</h4>
-      <ul class="list-disc list-inside">
-        <li>Stay far from enemies</li>
-        <li>Practice aiming with moving targets</li>
-      </ul>
-    </div>
+<!-- Tara -->
+<div class="bg-gray-900 bg-opacity-70 p-4 rounded-xl shadow-lg hover:scale-105 transition duration-300 flex items-center space-x-4 mb-6">
+  <img src="image/tara.png" alt="Tara" class="w-24 h-24 rounded-lg object-cover border-2 border-white" />
+  <div>
+    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Tara</h3>
+    <p class="mb-2">A versatile Brawler with psychic powers. Her super can trap enemies in a black hole, setting up for team plays or escapes.</p>
+    <ul class="list-disc list-inside mb-2">
+      <li>Type: Control</li>
+      <li>Best for: Crowd control, Trapping enemies</li>
+      <li>Super: Black hole trap</li>
+    </ul>
+    <p class="text-gray-300">Good for players who enjoy strategic control and area denial.</p>
+  </div>
+</div>
+
+<!-- Juju -->
+<div class="bg-gray-900 bg-opacity-70 p-4 rounded-xl shadow-lg hover:scale-105 transition duration-300 flex items-center space-x-4 mb-6">
+  <img src="image/Mythic_Juju.webp" alt="Juju" class="w-24 h-24 rounded-lg object-cover border-2 border-white" />
+  <div>
+    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Juju</h3>
+    <p class="mb-2">A versatile Brawler with balanced attack and super power. Excels at both offense and defense, making him beginner-friendly.</p>
+    <ul class="list-disc list-inside mb-2">
+      <li>Type: Balanced</li>
+      <li>Best for: Versatility, Control</li>
+      <li>Super: Area damage with a wide attack</li>
+    </ul>
+    <p class="text-gray-300">Perfect for new players exploring different playstyles.</p>
+  </div>
+</div>
+
+<!-- Draco -->
+<div class="bg-gray-900 bg-opacity-70 p-4 rounded-xl shadow-lg hover:scale-105 transition duration-300 flex items-center space-x-4 mb-6">
+  <img src="image/draco.jpg" alt="Draco" class="w-24 h-24 rounded-lg object-cover border-2 border-white" />
+  <div>
+    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Draco</h3>
+    <p class="mb-2">A dragon-themed Brawler with powerful fire attacks. His super unleashes a fiery dragon that damages and burns enemies over time.</p>
+    <ul class="list-disc list-inside mb-2">
+      <li>Type: Heavy Damage</li>
+      <li>Best for: Area damage, Fire effects</li>
+      <li>Super: Fire dragon attack</li>
+    </ul>
+    <p class="text-gray-300">Suitable for players who like aggressive, damage-heavy gameplay.</p>
+  </div>
+</div>
+
+<!-- Ash -->
+<div class="bg-gray-900 bg-opacity-70 p-4 rounded-xl shadow-lg hover:scale-105 transition duration-300 flex items-center space-x-4 mb-6">
+  <img src="image/ash.jpg" alt="Ash" class="w-24 h-24 rounded-lg object-cover border-2 border-white" />
+  <div>
+    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Ash</h3>
+    <p class="mb-2">A melee Brawler with high health and close-range power. His super stuns enemies with a powerful punch, excellent for brawling and crowd control.</p>
+    <ul class="list-disc list-inside mb-2">
+      <li>Type: Brawler</li>
+      <li>Best for: Close combat, Crowd control</li>
+      <li>Super: Stunning punch</li>
+    </ul>
+    <p class="text-gray-300">Ideal for players who prefer aggressive, close-quarters combat.</p>
+  </div>
+</div>
+
+  <!-- All Brawlers Info -->
+  <div class="w-full max-w-5xl px-4 mb-12">
+    <h2 class="text-4xl font-semibold text-center text-cyan-300 mb-6">All Brawlers Overview</h2>
+    <p class="mb-4 text-gray-200 text-lg leading-relaxed">Brawl Stars features a diverse roster of Brawlers, each with unique abilities and roles. From tanks and damage dealers to control and support characters, there's a Brawler for every playstyle. Here's a quick overview of their categories:</p>
+    <ul class="list-disc list-inside mb-4 text-gray-200 space-y-2">
+      <li><strong>Throwers:</strong> Use explosive projectiles to control areas (e.g., Dynamike, Stu)</li>
+      <li><strong>Ranged:</strong> Long-distance sharpshooters (e.g., Brock, Piper)</li>
+      <li><strong>Close Combat:</strong> Engage enemies directly with high health (e.g., Ash, Frank)</li>
+      <li><strong>Control & Support:</strong> Traps, crowd control, and strategic abilities (e.g., Tara, Byron)</li>
+    </ul>
+    <p class="text-gray-200">Explore different Brawlers to find your favorite style and master their skills!</p>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-gray-800 p-4 text-center mt-8">
-  <p class="text-white">&copy; 2025 Gaming Niku Plays Blog. All rights reserved.</p>
-  <a href="https://www.youtube.com/@NikuPlays_Gamer" target="_blank" rel="noopener noreferrer" class="block mt-2 text-white hover:underline">Watch My YouTube Channel</a>
+<div class="mt-6 text-center">
+  <a href="https://brawlstars.com" target="_blank" class="text-white text-lg font-semibold hover:text-red-600 transition duration-300 hover:scale-105 inline-block px-4 py-2 border-2 border-white rounded-lg shadow-lg hover:bg-gray-700">
+    For more information about Brawlers, visit the <span class="text-red-600 font-bold">Brawl Stars</span> website
+  </a>
+</div>
+<!-- Footer -->
+<footer class="bg-gray-800 p-4 text-center mt-8 bg-opacity-60">
+  <p class="text-white">
+    &copy; 2025 <a href="https://www.youtube.com/@NikuPlays_Gamer" target="_blank" class="hover:text-red-600 transition-colors duration-300">Niku Plays</a> Blog. All rights reserved.
+  </p>
 </footer>
 
-<!-- Scripts for menu and background shapes -->
 <script>
-  // Toggle menu
-  document.getElementById('menu-toggle').addEventListener('click', () => {
-    document.getElementById('menu').classList.toggle('hidden');
-  });
-
-  // Generate nav menu links
-  const menuItems = [
-    { name: 'Brawl Stars', href: 'brawlstars.html' },
-    { name: 'Clash Royale', href: 'clashroyale.html' },
-  ];
-  const menuContainer = document.getElementById('menu');
-  menuItems.forEach(item => {
-    const a = document.createElement('a');
-    a.href = item.href;
-    a.className = 'ml-4 mt-2 cursor-pointer hover:underline hover:text-cyan-300 transition duration-300 bg-white bg-opacity-20 p-3 rounded';
-    a.textContent = item.name;
-    menuContainer.appendChild(a);
-  });
-
-  // Generate animated background shapes
+  // Generate animated shapes background
   const shapesContainer = document.getElementById('shapesContainer');
-  for (let i=0; i<20; i++) {
+  for (let i=0; i<25; i++) {
     const shape = document.createElement('div');
     shape.className = 'shape';
-    shape.style.width = shape.style.height = (Math.random() * 50 + 20) + 'px';
+    shape.style.width = shape.style.height = (Math.random() * 40 + 20) + 'px';
     shape.style.top = Math.random() * 100 + '%';
     shape.style.left = Math.random() * 100 + '%';
-    shape.style.backgroundColor = `rgba(255,255,255,${Math.random() * 0.2 + 0.1})`;
-    shape.style.transform = `translate(0,0)`;
-    shape.style.animationDuration = (20 + Math.random() * 20) + 's';
+    shape.style.backgroundColor = `rgba(255,255,255,${Math.random() * 0.2 + 0.05})`;
     shape.style.borderRadius = Math.random() > 0.5 ? '50%' : '20%';
+    shape.style.animationDuration = (20 + Math.random() * 20) + 's';
     shapesContainer.appendChild(shape);
   }
 </script>
+
 </body>
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="flex flex-col min-h-screen">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sitemap - Niku Plays Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      position: relative;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(270deg, #ff0055, #00ffaa, #5500ff, #ffff55);
+      background-size: 600% 600%;
+      animation: gradientAnimation 20s ease infinite;
+      z-index: -1;
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-950 text-white relative">
+
+<!-- Shapes -->
+<div class="animated-shapes" id="shapesContainer"></div>
+
+<!-- Main Content -->
+<section class="flex-1 flex items-center justify-center px-4">
+  <div class="max-w-6xl w-full p-6 bg-gray-900 bg-opacity-70 rounded-3xl shadow-xl backdrop-blur-lg flex flex-col items-center space-y-8">
+    <!-- Navigation -->
+    <div class="flex justify-center w-full space-x-4 flex-wrap">
+      <a href="index.html" class="bg-cyan-500 hover:bg-cyan-600 transition duration-300 text-white font-semibold py-2 px-4 rounded-lg shadow-lg">Home</a>
+      <a href="about.html" class="bg-cyan-500 hover:bg-cyan-600 transition duration-300 text-white font-semibold py-2 px-4 rounded-lg shadow-lg">About Us</a>
+      <a href="terms.html" class="bg-cyan-500 hover:bg-cyan-600 transition duration-300 text-white font-semibold py-2 px-4 rounded-lg shadow-lg">Terms</a>
+      <a href="privacy.html" class="bg-cyan-500 hover:bg-cyan-600 transition duration-300 text-white font-semibold py-2 px-4 rounded-lg shadow-lg">Privacy</a>
+      <a href="contact.html" class="bg-cyan-500 hover:bg-cyan-600 transition duration-300 text-white font-semibold py-2 px-4 rounded-lg shadow-lg">Contact</a>
+    </div>
+
+    <!-- Title -->
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-center tracking-wide">Sitemap</h2>
+
+    <!-- Sitemap List -->
+    <div class="max-w-2xl w-full bg-white bg-opacity-20 p-8 rounded-2xl shadow-xl border-4 border-cyan-300 border-opacity-50 transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
+      <ul class="list-disc list-inside space-y-3 text-lg font-medium">
+        <li><a href="index.html" class="underline hover:text-cyan-300 transition">Home - Best Brawlers for Beginners</a></li>
+        <li><a href="about.html" class="underline hover:text-cyan-300 transition">About Us</a></li>
+        <li><a href="terms.html" class="underline hover:text-cyan-300 transition">Terms & Conditions</a></li>
+        <li><a href="privacy.html" class="underline hover:text-cyan-300 transition">Privacy Policy</a></li>
+        <li><a href="contact.html" class="underline hover:text-cyan-300 transition">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 p-4 text-center bg-opacity-60 mt-auto">
+  <p class="text-white text-sm">&copy; 2025 Niku Plays Blog. All rights reserved.</p>
+</footer>
+
+<script>
+  const shapesContainer = document.getElementById('shapesContainer');
+  if (shapesContainer) {
+    for (let i=0; i<25; i++) {
+      const shape = document.createElement('div');
+      shape.className = 'shape';
+      const size = Math.random() * 40 + 20;
+      shape.style.width = size + 'px';
+      shape.style.height = size + 'px';
+      shape.style.top = Math.random() * 100 + '%';
+      shape.style.left = Math.random() * 100 + '%';
+      shape.style.backgroundColor = `rgba(255,255,255,${Math.random() * 0.2 + 0.1})`;
+      shape.style.borderRadius = Math.random() > 0.5 ? '50%' : '20%';
+      shape.style.position = 'absolute';
+      shape.style.animation = `float ${5 + Math.random() * 10}s ease-in-out ${Math.random() * 5}s infinite`;
+      shapesContainer.appendChild(shape);
+    }
+  }
+</script>
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+</style>
+</body>
+</html>

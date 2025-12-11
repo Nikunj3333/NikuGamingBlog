@@ -1,0 +1,107 @@
+<!-- Save as contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Niku Plays Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      position: relative;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(270deg, #ff0055, #00ffaa, #5500ff, #ffff55);
+      background-size: 600% 600%;
+      animation: gradientAnimation 20s ease infinite;
+      z-index: -1;
+    }
+    @keyframes gradientAnimation {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-950 text-white">
+
+<!-- Shapes (optional) -->
+<!-- <div class="animated-shapes" id="shapesContainer"></div> -->
+
+<!-- Main Content -->
+<div class="flex-1 flex items-center justify-center px-4">
+  <section class="w-full max-w-7xl p-4 bg-gray-950 bg-opacity-60 flex flex-col items-center justify-center min-h-[80vh]">
+
+    <!-- Navigation Buttons -->
+    <div class="flex justify-center mb-4 w-full">
+      <a href="index.html" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded shadow-lg">Home</a>
+    </div>
+
+    <!-- Page Title -->
+    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center fade-in">Contact Us</h2>
+
+    <!-- Wide, Long Creative Contact Form -->
+    <div class="w-full max-w-6xl p-10 rounded-3xl shadow-xl border-4 border-cyan-300 border-opacity-50 bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900 bg-opacity-30 backdrop-blur-lg">
+      <h3 class="text-3xl font-semibold mb-8 text-center text-cyan-300 tracking-wide">Let's Connect</h3>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-8" onsubmit="return false;">
+        <div class="col-span-1">
+          <div class="group relative">
+            <input type="text" required placeholder="Your Name" class="peer w-full p-4 pt-6 bg-gray-800 bg-opacity-70 rounded-full border-2 border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300 transition duration-300"/>
+            <label class="absolute left-4 top-2 text-gray-300 text-sm transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-cyan-300 peer-focus:outline-none">Name</label>
+          </div>
+        </div>
+        <div class="col-span-1">
+          <div class="group relative">
+            <input type="email" required placeholder="Your Email" class="peer w-full p-4 pt-6 bg-gray-800 bg-opacity-70 rounded-full border-2 border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300 transition duration-300"/>
+            <label class="absolute left-4 top-2 text-gray-300 text-sm transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-cyan-300 peer-focus:outline-none">Email</label>
+          </div>
+        </div>
+        <div class="col-span-2">
+          <div class="relative">
+            <textarea required rows="6" placeholder="Your Message" class="peer w-full p-4 pt-6 bg-gray-800 bg-opacity-70 rounded-full border-2 border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300 transition duration-300"></textarea>
+            <label class="absolute left-4 top-2 text-gray-300 text-sm transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-cyan-300 peer-focus:outline-none">Message</label>
+          </div>
+        </div>
+        <div class="col-span-2 flex justify-center mt-4">
+          <button class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+</div>
+
+<!-- Footer at bottom -->
+<footer class="bg-gray-800 p-4 text-center bg-opacity-60 w-full mt-auto">
+  <p class="text-white text-sm">&copy; 2025 Niku Plays Blog. All rights reserved.</p>
+</footer>
+
+<script>
+  const shapesContainer = document.getElementById('shapesContainer');
+  if (shapesContainer) {
+    for (let i=0; i<20; i++) {
+      const shape = document.createElement('div');
+      shape.className = 'shape';
+      shape.style.width = shape.style.height = (Math.random() * 50 + 20) + 'px';
+      shape.style.top = Math.random() * 100 + '%';
+      shape.style.left = Math.random() * 100 + '%';
+      shape.style.backgroundColor = `rgba(255,255,255,${Math.random() * 0.2 + 0.1})`;
+      shape.style.borderRadius = Math.random() > 0.5 ? '50%' : '20%';
+      shape.style.animationDuration = (20 + Math.random() * 20) + 's';
+      shapesContainer.appendChild(shape);
+    }
+  }
+</script>
+</body>
+</html>
